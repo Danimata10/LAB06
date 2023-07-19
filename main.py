@@ -1,4 +1,7 @@
-def encode(x):
+# Daniel Mata
+# I'll add some comments to my code
+
+def encode(x): # Encodes the password, adds 3 units to each element in password
     enc_password1 = ''
     for i in x:
         enc_char = chr(ord(i) + 3)
@@ -6,10 +9,10 @@ def encode(x):
     return enc_password1
 
 
-def main():
+def main(): # Main function
 
     while True:
-        print('Menu')
+        print('Menu') # Printing the menu
         print('-------------')
         print('1. Encode')
         print('2. Decode')
@@ -26,7 +29,7 @@ def main():
             print(f'The encoded password is {enc_password}, and the original password is {password}.\n')
 
         if option == 3:
-            print('\nExiting program:)')
+            print('\nExiting program')
             break
 
 
